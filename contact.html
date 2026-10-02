@@ -9,78 +9,84 @@
 </head>
 <body class="bg-stone-900 text-stone-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION - RESPONSIVE -->
     <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-emerald-400 tracking-tight flex items-center gap-2">
-                <img src="Images/Logo.jpg" alt="Yoga Hương Tre Logo" class="w-10 h-10 rounded-full object-cover border-2 border-emerald-500 shadow-md">
-                <span class="font-serif">Yoga Hương Tre</span>
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 py-3 sm:py-4 flex justify-between items-center gap-2">
+            <a href="index.html" class="text-xl sm:text-2xl font-bold text-emerald-400 tracking-tight flex items-center gap-2">
+                <img src="Images/Logo.jpg" alt="Yoga Hương Tre Logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-emerald-500 shadow-md flex-shrink-0">
+                <span class="font-serif truncate">Yoga Hương Tre</span>
             </a>
-            <nav class="hidden md:flex space-x-8 font-medium text-stone-300">
-                <a href="index.html" class="hover:text-emerald-400 transition">Trang chủ</a>
-                <a href="classes.html" class="hover:text-emerald-400 transition">Lớp học & Lịch tập</a>
-                <a href="pricing.html" class="hover:text-emerald-400 transition">Bảng giá</a>
-                <a href="contact.html" class="text-emerald-400 font-semibold">Liên hệ</a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 font-medium text-stone-300">
+                <a href="index.html" class="hover:text-emerald-400 transition whitespace-nowrap">Trang chủ</a>
+                <a href="classes.html" class="hover:text-emerald-400 transition whitespace-nowrap">Lớp học & Lịch tập</a>
+                <a href="pricing.html" class="hover:text-emerald-400 transition whitespace-nowrap">Bảng giá</a>
+                <a href="contact.html" class="text-emerald-400 font-semibold whitespace-nowrap">Liên hệ</a>
             </nav>
-            <a href="contact.html" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-5 py-2 rounded-full transition shadow-md">
+            <a href="contact.html" class="hidden sm:inline-flex bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium px-4 sm:px-5 py-2 rounded-full transition shadow-md whitespace-nowrap shrink-0">
                 Đăng ký học thử
             </a>
+            <!-- Mobile Nav Nút -->
+            <div class="md:hidden flex gap-1 shrink-0">
+                <a href="classes.html" class="text-xs bg-stone-800 text-stone-200 px-2.5 py-1.5 rounded-lg border border-stone-700">Lớp học</a>
+                <a href="pricing.html" class="text-xs bg-stone-800 text-stone-200 px-2.5 py-1.5 rounded-lg border border-stone-700">Bảng giá</a>
+            </div>
         </div>
     </header>
 
-    <!-- HERO / BANNER - ĐỒNG BỘ VỚI TRANG CHỦ -->
-    <section class="relative py-24 md:py-40 px-4 border-b border-stone-800 overflow-hidden">
+    <!-- HERO / BANNER - RESPONSIVE -->
+    <section class="relative py-16 sm:py-20 md:py-40 px-3 sm:px-4 border-b border-stone-800 overflow-hidden">
         <div class="absolute inset-0">
-            <img src="Images/TopBanner.jpg" alt="Top Banner Yoga" class="w-full h-full object-cover object-center scale-105">
-            <div class="absolute inset-0 bg-gradient-to-r from-stone-900/95 via-stone-900/60 to-transparent"></div>
-            <div class="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-stone-900/70 to-transparent"></div>
+            <img src="Images/TopBanner.jpg" alt="Top Banner Yoga" class="w-full h-full object-cover object-center sm:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/80 to-stone-900/50 md:bg-gradient-to-r md:from-stone-900/95 md:via-stone-900/60 md:to-transparent"></div>
+            <div class="absolute top-0 left-0 right-0 h-20 sm:h-24 bg-gradient-to-b from-stone-900/80 to-transparent"></div>
         </div>
-        <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="inline-block bg-emerald-950/90 text-emerald-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-800 backdrop-blur">
+        <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
+            <div class="space-y-4 sm:space-y-6">
+                <span class="inline-block bg-emerald-950/90 text-emerald-400 text-[10px] sm:text-xs font-bold uppercase tracking-widest px-2.5 sm:px-3 py-1 rounded-full border border-emerald-800 backdrop-blur">
                     Kết nối với chúng tôi
                 </span>
-                <h1 class="text-4xl md:text-6xl font-extrabold font-serif tracking-tight leading-tight text-white drop-shadow-lg">
-                    Liên Hệ & <br><span class="text-emerald-400">Đăng Ký Học Thử</span>
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold font-serif tracking-tight leading-tight text-white drop-shadow-lg">
+                    Liên Hệ & <br class="hidden sm:block"><span class="text-emerald-400">Đăng Ký Học Thử</span>
                 </h1>
-                <p class="text-stone-200 text-lg leading-relaxed font-light drop-shadow">
+                <p class="text-stone-200 text-sm sm:text-lg leading-relaxed font-light drop-shadow">
                     Chúng tôi luôn sẵn sàng tư vấn và đồng hành cùng bạn trên hành trình sức khỏe. Để lại thông tin, đội ngũ Yoga Hương Tre sẽ liên hệ ngay!
                 </p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#contact-form" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-lg">
+                <div class="flex flex-wrap gap-2 sm:gap-4 pt-2 sm:pt-4">
+                    <a href="#contact-form" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm sm:text-base font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-xl transition shadow-lg flex-1 sm:flex-none text-center">
                         Điền Thông Tin Ngay
                     </a>
-                    <a href="tel:+84909123456" class="bg-stone-800/80 hover:bg-stone-700 text-stone-200 border border-stone-700 font-semibold px-8 py-3.5 rounded-xl transition backdrop-blur">
+                    <a href="tel:+84909123456" class="bg-stone-800/80 hover:bg-stone-700 text-stone-200 border border-stone-700 text-sm sm:text-base font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-xl transition backdrop-blur flex-1 sm:flex-none text-center">
                         Gọi Ngay: 0909 123 456
                     </a>
                 </div>
             </div>
-            <!-- Khung minh họa Thông tin liên hệ nhanh -->
-            <div class="bg-stone-800/50 p-6 rounded-3xl border border-emerald-500/30 shadow-2xl backdrop-blur-sm ring-1 ring-stone-500/20">
-                <div class="flex justify-between items-center mb-6">
-                    <h3 class="text-lg font-bold text-white">Thông Tin Liên Hệ</h3>
-                    <span class="text-xs bg-emerald-900 text-emerald-300 px-2.5 py-1 rounded-md font-medium">Hỗ trợ 7 ngày</span>
+            <!-- Khung minh họa Thông tin liên hệ nhanh - RESPONSIVE -->
+            <div class="bg-stone-800/50 p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-emerald-500/30 shadow-2xl backdrop-blur-sm ring-1 ring-stone-500/20">
+                <div class="flex justify-between items-center mb-4 sm:mb-6">
+                    <h3 class="text-sm sm:text-lg font-bold text-white">Thông Tin Liên Hệ</h3>
+                    <span class="text-[10px] sm:text-xs bg-emerald-900 text-emerald-300 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md font-medium whitespace-nowrap">Hỗ trợ 7 ngày</span>
                 </div>
-                <div class="space-y-4">
-                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-start gap-4 hover:border-emerald-500/50 transition">
-                        <div class="w-10 h-10 rounded-lg bg-emerald-900/60 flex items-center justify-center text-xl flex-shrink-0">📍</div>
+                <div class="space-y-2.5 sm:space-y-4">
+                    <div class="bg-stone-900 p-3 sm:p-4 rounded-xl border border-stone-800 flex items-start gap-3 sm:gap-4 hover:border-emerald-500/50 transition">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-emerald-900/60 flex items-center justify-center text-base sm:text-xl flex-shrink-0">📍</div>
                         <div>
-                            <p class="text-xs text-emerald-400 font-semibold mb-0.5">ĐỊA CHỈ STUDIO</p>
-                            <h4 class="text-white font-medium">123 Đường Yoga, Phường Bình An, TP.HCM</h4>
+                            <p class="text-[10px] sm:text-xs text-emerald-400 font-semibold mb-0.5">ĐỊA CHỈ STUDIO</p>
+                            <h4 class="text-white font-medium text-sm sm:text-base">123 Đường Yoga, P.Bình An, TPHCM</h4>
                         </div>
                     </div>
-                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-start gap-4 hover:border-emerald-500/50 transition">
-                        <div class="w-10 h-10 rounded-lg bg-emerald-900/60 flex items-center justify-center text-xl flex-shrink-0">📞</div>
+                    <div class="bg-stone-900 p-3 sm:p-4 rounded-xl border border-stone-800 flex items-start gap-3 sm:gap-4 hover:border-emerald-500/50 transition">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-emerald-900/60 flex items-center justify-center text-base sm:text-xl flex-shrink-0">📞</div>
                         <div>
-                            <p class="text-xs text-emerald-400 font-semibold mb-0.5">HOTLINE / ZALO</p>
-                            <h4 class="text-white font-medium text-lg">0909 123 456</h4>
+                            <p class="text-[10px] sm:text-xs text-emerald-400 font-semibold mb-0.5">HOTLINE / ZALO</p>
+                            <h4 class="text-white font-semibold text-base sm:text-lg">0909 123 456</h4>
                         </div>
                     </div>
-                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-start gap-4 hover:border-emerald-500/50 transition">
-                        <div class="w-10 h-10 rounded-lg bg-emerald-900/60 flex items-center justify-center text-xl flex-shrink-0">🕒</div>
+                    <div class="bg-stone-900 p-3 sm:p-4 rounded-xl border border-stone-800 flex items-start gap-3 sm:gap-4 hover:border-emerald-500/50 transition">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-emerald-900/60 flex items-center justify-center text-base sm:text-xl flex-shrink-0">🕒</div>
                         <div>
-                            <p class="text-xs text-emerald-400 font-semibold mb-0.5">GIỜ MỞ CỬA</p>
-                            <h4 class="text-white font-medium">Thứ 2 - Chủ Nhật: 05:30 - 21:30</h4>
+                            <p class="text-[10px] sm:text-xs text-emerald-400 font-semibold mb-0.5">GIỜ MỞ CỬA</p>
+                            <h4 class="text-white font-medium text-sm sm:text-base">T2-CN: 05:30 - 21:30</h4>
                         </div>
                     </div>
                 </div>
@@ -88,53 +94,53 @@
         </div>
     </section>
 
-    <!-- CONTENT -->
-    <section class="max-w-7xl mx-auto py-20 px-4">
+    <!-- CONTENT - RESPONSIVE -->
+    <section id="contact-form" class="max-w-7xl mx-auto py-12 sm:py-16 md:py-20 px-3 sm:px-4">
         <!-- Studio mini gallery above form -->
-        <div class="grid grid-cols-4 gap-3 mb-10">
-            <img src="Images/4.jpg" alt="Studio 1" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
-            <img src="Images/5.jpg" alt="Studio 2" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
-            <img src="Images/6.jpg" alt="Studio 3" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
-            <img src="Images/7.jpg" alt="Studio 4" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+        <div class="grid grid-cols-4 gap-2 sm:gap-3 mb-6 sm:mb-10">
+            <img src="Images/4.jpg" alt="Studio 1" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+            <img src="Images/5.jpg" alt="Studio 2" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+            <img src="Images/6.jpg" alt="Studio 3" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+            <img src="Images/7.jpg" alt="Studio 4" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
         </div>
 
-        <div class="bg-stone-800 rounded-2xl shadow-xl border border-stone-700/60 p-8 md:p-12 grid md:grid-cols-2 gap-10">
-            <div class="space-y-6">
-                <h1 class="text-2xl md:text-3xl font-bold font-serif text-white">Đăng Ký Tư Vấn & Học Thử</h1>
-                <p class="text-stone-300 text-sm leading-relaxed">
+        <div class="bg-stone-800 rounded-2xl shadow-xl border border-stone-700/60 p-5 sm:p-8 md:p-12 grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+            <div class="space-y-4 sm:space-y-6 order-2 md:order-1">
+                <h1 class="text-2xl sm:text-3xl font-bold font-serif text-white">Đăng Ký Tư Vấn & Học Thử</h1>
+                <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
                     Hãy để lại thông tin, đội ngũ Yoga Hương Tre sẽ liên hệ tư vấn khung giờ và lớp học phù hợp nhất với bạn hoàn toàn miễn phí.
                 </p>
                 <!-- Featured image on contact card -->
                 <div class="rounded-xl overflow-hidden border border-stone-700/50 shadow-lg">
-                    <img src="Images/1.jpg" alt="Không gian tập luyện" class="w-full h-40 object-cover">
+                    <img src="Images/1.jpg" alt="Không gian tập luyện" class="w-full h-32 sm:h-40 md:h-48 object-cover">
                 </div>
-                <div class="space-y-3 text-sm text-stone-300 pt-2">
-                    <p class="flex items-center gap-3">📍 <strong class="text-emerald-400">Địa chỉ:</strong> 123 Đường Yoga, Phường Bình An, TP.HCM</p>
-                    <p class="flex items-center gap-3">📞 <strong class="text-emerald-400">Hotline / Zalo:</strong> 0909 123 456</p>
-                    <p class="flex items-center gap-3">✉️ <strong class="text-emerald-400">Email:</strong> contact@yogahuongtre.vn</p>
+                <div class="space-y-2.5 sm:space-y-3 text-xs sm:text-sm text-stone-300 pt-1 sm:pt-2">
+                    <p class="flex items-start sm:items-center gap-2 sm:gap-3"><span class="shrink-0 mt-0.5 sm:mt-0">📍</span><span><strong class="text-emerald-400">Địa chỉ:</strong> 123 Đường Yoga, P.Bình An, TPHCM</span></p>
+                    <p class="flex items-start sm:items-center gap-2 sm:gap-3"><span class="shrink-0 mt-0.5 sm:mt-0">📞</span><span><strong class="text-emerald-400">Hotline / Zalo:</strong> 0909 123 456</span></p>
+                    <p class="flex items-start sm:items-center gap-2 sm:gap-3"><span class="shrink-0 mt-0.5 sm:mt-0">✉️</span><span><strong class="text-emerald-400">Email:</strong> contact@yogahuongtre.vn</span></p>
                 </div>
             </div>
 
-            <!-- Form gửi mail qua Formspree -->
-            <form action="https://formspree.io/f/nhap_ma_formspree_cua_ban_vao_day" method="POST" class="space-y-4">
+            <!-- Form gửi mail qua Formspree - RESPONSIVE -->
+            <form action="https://formspree.io/f/nhap_ma_formspree_cua_ban_vao_day" method="POST" class="space-y-3 sm:space-y-4 order-1 md:order-2">
                 <div>
-                    <label class="block text-sm font-medium text-stone-200 mb-1">Họ và tên</label>
-                    <input type="text" name="name" required placeholder="Nguyễn Văn A" class="w-full px-4 py-2.5 border border-stone-700 bg-stone-900 text-stone-100 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none placeholder:text-stone-500">
+                    <label class="block text-xs sm:text-sm font-medium text-stone-200 mb-1">Họ và tên</label>
+                    <input type="text" name="name" required placeholder="Nguyễn Văn A" class="w-full px-3 sm:px-4 py-2.5 text-xs sm:text-sm border border-stone-700 bg-stone-900 text-stone-100 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none placeholder:text-stone-500">
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-stone-200 mb-1">Số điện thoại / Zalo</label>
-                    <input type="tel" name="phone" required placeholder="0909xxxxxx" class="w-full px-4 py-2.5 border border-stone-700 bg-stone-900 text-stone-100 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none placeholder:text-stone-500">
+                    <label class="block text-xs sm:text-sm font-medium text-stone-200 mb-1">Số điện thoại / Zalo</label>
+                    <input type="tel" name="phone" required placeholder="0909xxxxxx" class="w-full px-3 sm:px-4 py-2.5 text-xs sm:text-sm border border-stone-700 bg-stone-900 text-stone-100 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none placeholder:text-stone-500">
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-stone-200 mb-1">Lớp quan tâm</label>
-                    <select name="course" class="w-full px-4 py-2.5 border border-stone-700 bg-stone-900 text-stone-100 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none">
+                    <label class="block text-xs sm:text-sm font-medium text-stone-200 mb-1">Lớp quan tâm</label>
+                    <select name="course" class="w-full px-3 sm:px-4 py-2.5 text-xs sm:text-sm border border-stone-700 bg-stone-900 text-stone-100 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none">
                         <option value="Hatha Co Ban">Hatha Yoga Cơ Bản</option>
-                        <option value="Tri Lieu Vai Gay">Yoga Trị Liệu Cổ Vai Gáy</option>
-                        <option value="Vinyasa Flow">Vinyasa Flow Nâng Cao</option>
+                        <option value="Tri Lieu Vai Gay">Yoga Trị Liệu CVG</option>
+                        <option value="Vinyasa Flow">Vinyasa Flow NC</option>
                         <option value="The Trai Nghiem">Thẻ Trải Nghiệm</option>
                     </select>
                 </div>
-                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 rounded-xl transition shadow-lg">
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white text-sm sm:text-base font-semibold py-2.5 sm:py-3 rounded-xl transition shadow-lg mt-1 sm:mt-2">
                     Gửi Đăng Ký Ngay
                 </button>
             </form>

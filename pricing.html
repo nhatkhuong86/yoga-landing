@@ -9,147 +9,153 @@
 </head>
 <body class="bg-stone-900 text-stone-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION - RESPONSIVE -->
     <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-emerald-400 tracking-tight flex items-center gap-2">
-                <img src="Images/Logo.jpg" alt="Yoga Hương Tre Logo" class="w-10 h-10 rounded-full object-cover border-2 border-emerald-500 shadow-md">
-                <span class="font-serif">Yoga Hương Tre</span>
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 py-3 sm:py-4 flex justify-between items-center gap-2">
+            <a href="index.html" class="text-xl sm:text-2xl font-bold text-emerald-400 tracking-tight flex items-center gap-2">
+                <img src="Images/Logo.jpg" alt="Yoga Hương Tre Logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-emerald-500 shadow-md flex-shrink-0">
+                <span class="font-serif truncate">Yoga Hương Tre</span>
             </a>
-            <nav class="hidden md:flex space-x-8 font-medium text-stone-300">
-                <a href="index.html" class="hover:text-emerald-400 transition">Trang chủ</a>
-                <a href="classes.html" class="hover:text-emerald-400 transition">Lớp học & Lịch tập</a>
-                <a href="pricing.html" class="text-emerald-400 font-semibold">Bảng giá</a>
-                <a href="contact.html" class="hover:text-emerald-400 transition">Liên hệ</a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 font-medium text-stone-300">
+                <a href="index.html" class="hover:text-emerald-400 transition whitespace-nowrap">Trang chủ</a>
+                <a href="classes.html" class="hover:text-emerald-400 transition whitespace-nowrap">Lớp học & Lịch tập</a>
+                <a href="pricing.html" class="text-emerald-400 font-semibold whitespace-nowrap">Bảng giá</a>
+                <a href="contact.html" class="hover:text-emerald-400 transition whitespace-nowrap">Liên hệ</a>
             </nav>
-            <a href="contact.html" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-5 py-2 rounded-full transition shadow-md">
+            <a href="contact.html" class="hidden sm:inline-flex bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium px-4 sm:px-5 py-2 rounded-full transition shadow-md whitespace-nowrap shrink-0">
                 Đăng ký học thử
             </a>
+            <!-- Mobile Nav Nút -->
+            <div class="md:hidden flex gap-1 shrink-0">
+                <a href="classes.html" class="text-xs bg-stone-800 text-stone-200 px-2.5 py-1.5 rounded-lg border border-stone-700">Lớp học</a>
+                <a href="contact.html" class="text-xs bg-emerald-600 text-white px-2.5 py-1.5 rounded-lg">Liên hệ</a>
+            </div>
         </div>
     </header>
 
-    <!-- HERO / BANNER - ĐỒNG BỘ VỚI TRANG CHỦ -->
-    <section class="relative py-24 md:py-40 px-4 border-b border-stone-800 overflow-hidden">
+    <!-- HERO / BANNER - RESPONSIVE -->
+    <section class="relative py-16 sm:py-20 md:py-40 px-3 sm:px-4 border-b border-stone-800 overflow-hidden">
         <div class="absolute inset-0">
-            <img src="Images/TopBanner.jpg" alt="Top Banner Yoga" class="w-full h-full object-cover object-center scale-105">
-            <div class="absolute inset-0 bg-gradient-to-r from-stone-900/95 via-stone-900/60 to-transparent"></div>
-            <div class="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-stone-900/70 to-transparent"></div>
+            <img src="Images/TopBanner.jpg" alt="Top Banner Yoga" class="w-full h-full object-cover object-center sm:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/80 to-stone-900/50 md:bg-gradient-to-r md:from-stone-900/95 md:via-stone-900/60 md:to-transparent"></div>
+            <div class="absolute top-0 left-0 right-0 h-20 sm:h-24 bg-gradient-to-b from-stone-900/80 to-transparent"></div>
         </div>
-        <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="inline-block bg-emerald-950/90 text-emerald-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-800 backdrop-blur">
+        <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
+            <div class="space-y-4 sm:space-y-6">
+                <span class="inline-block bg-emerald-950/90 text-emerald-400 text-[10px] sm:text-xs font-bold uppercase tracking-widest px-2.5 sm:px-3 py-1 rounded-full border border-emerald-800 backdrop-blur">
                     Gói dịch vụ minh bạch
                 </span>
-                <h1 class="text-4xl md:text-6xl font-extrabold font-serif tracking-tight leading-tight text-white drop-shadow-lg">
-                    Bảng Giá & <br><span class="text-emerald-400">Gói Hội Viên</span>
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold font-serif tracking-tight leading-tight text-white drop-shadow-lg">
+                    Bảng Giá & <br class="hidden sm:block"><span class="text-emerald-400">Gói Hội Viên</span>
                 </h1>
-                <p class="text-stone-200 text-lg leading-relaxed font-light drop-shadow">
+                <p class="text-stone-200 text-sm sm:text-lg leading-relaxed font-light drop-shadow">
                     Đầu tư cho sức khỏe thân - tâm - trí với các gói chi phí hợp lý, minh bạch và nhiều ưu đãi hấp dẫn.
                 </p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#pricing-cards" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-lg">
+                <div class="flex flex-wrap gap-2 sm:gap-4 pt-2 sm:pt-4">
+                    <a href="#pricing-cards" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm sm:text-base font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-xl transition shadow-lg flex-1 sm:flex-none text-center">
                         Xem Chi Tiết Gói
                     </a>
-                    <a href="contact.html" class="bg-stone-800/80 hover:bg-stone-700 text-stone-200 border border-stone-700 font-semibold px-8 py-3.5 rounded-xl transition backdrop-blur">
+                    <a href="contact.html" class="bg-stone-800/80 hover:bg-stone-700 text-stone-200 border border-stone-700 text-sm sm:text-base font-semibold px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-xl transition backdrop-blur flex-1 sm:flex-none text-center">
                         Đăng Ký Tư Vấn
                     </a>
                 </div>
             </div>
-            <!-- Khung minh họa Gói giá nổi bật -->
-            <div class="bg-stone-800/50 p-6 rounded-3xl border border-amber-500/40 shadow-2xl backdrop-blur-sm ring-1 ring-stone-500/20">
-                <div class="flex justify-between items-center mb-6">
-                    <h3 class="text-lg font-bold text-white">Gói Được Yêu Thích</h3>
-                    <span class="text-xs bg-amber-500 text-white px-2.5 py-1 rounded-md font-bold shadow">BEST VALUE</span>
+            <!-- Khung minh họa Gói giá nổi bật - RESPONSIVE -->
+            <div class="bg-stone-800/50 p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-amber-500/40 shadow-2xl backdrop-blur-sm ring-1 ring-stone-500/20">
+                <div class="flex justify-between items-center mb-4 sm:mb-6">
+                    <h3 class="text-sm sm:text-lg font-bold text-white">Gói Được Yêu Thích</h3>
+                    <span class="text-[10px] sm:text-xs bg-amber-500 text-white px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md font-bold shadow whitespace-nowrap">BEST VALUE</span>
                 </div>
-                <div class="space-y-4">
-                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-center justify-between hover:border-emerald-500/50 transition">
+                <div class="space-y-2.5 sm:space-y-4">
+                    <div class="bg-stone-900 p-3 sm:p-4 rounded-xl border border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between hover:border-emerald-500/50 transition gap-2 sm:gap-0">
                         <div>
-                            <p class="text-sm font-semibold text-stone-400">Thẻ Trải Nghiệm</p>
-                            <h4 class="text-white font-medium">3 buổi tập linh hoạt</h4>
+                            <p class="text-xs sm:text-sm font-semibold text-stone-400">Thẻ Trải Nghiệm</p>
+                            <h4 class="text-white font-medium text-sm sm:text-base">3 buổi linh hoạt</h4>
                         </div>
-                        <span class="text-lg font-extrabold text-emerald-400 font-serif">150k</span>
+                        <span class="text-base sm:text-lg font-extrabold text-emerald-400 font-serif self-start sm:self-auto">150k</span>
                     </div>
-                    <div class="bg-gradient-to-r from-emerald-900/80 to-amber-900/50 p-4 rounded-xl border border-amber-500/60 flex items-center justify-between">
+                    <div class="bg-gradient-to-r from-emerald-900/80 to-amber-900/50 p-3 sm:p-4 rounded-xl border border-amber-500/60 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-0">
                         <div>
-                            <p class="text-sm font-semibold text-amber-300">⭐ Thẻ Hội Viên Tháng</p>
-                            <h4 class="text-white font-medium">Tập không giới hạn</h4>
+                            <p class="text-xs sm:text-sm font-semibold text-amber-300">⭐ Thẻ Hội Viên Tháng</p>
+                            <h4 class="text-white font-medium text-sm sm:text-base">Tập không giới hạn</h4>
                         </div>
-                        <span class="text-lg font-extrabold text-amber-400 font-serif">850k</span>
+                        <span class="text-base sm:text-lg font-extrabold text-amber-400 font-serif self-start sm:self-auto">850k</span>
                     </div>
-                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-center justify-between hover:border-emerald-500/50 transition">
+                    <div class="bg-stone-900 p-3 sm:p-4 rounded-xl border border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between hover:border-emerald-500/50 transition gap-2 sm:gap-0">
                         <div>
-                            <p class="text-sm font-semibold text-stone-400">Thẻ Hội Viên Quý</p>
-                            <h4 class="text-white font-medium">Tiết kiệm ~ 15%</h4>
+                            <p class="text-xs sm:text-sm font-semibold text-stone-400">Thẻ Hội Viên Quý</p>
+                            <h4 class="text-white font-medium text-sm sm:text-base">Tiết kiệm ~ 15%</h4>
                         </div>
-                        <span class="text-lg font-extrabold text-emerald-400 font-serif">2.2tr</span>
+                        <span class="text-base sm:text-lg font-extrabold text-emerald-400 font-serif self-start sm:self-auto">2.2tr</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTENT -->
-    <section class="max-w-7xl mx-auto py-20 px-4">
+    <!-- CONTENT - RESPONSIVE -->
+    <section id="pricing-cards" class="max-w-7xl mx-auto py-12 sm:py-16 md:py-20 px-3 sm:px-4">
         <!-- Visual heading with small images -->
-        <div class="grid grid-cols-4 gap-3 mb-10">
-            <img src="Images/4.jpg" alt="Studio" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
-            <img src="Images/5.jpg" alt="Tập luyện" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
-            <img src="Images/6.jpg" alt="Dụng cụ" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
-            <img src="Images/7.jpg" alt="Không gian" class="rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+        <div class="grid grid-cols-4 gap-2 sm:gap-3 mb-6 sm:mb-10">
+            <img src="Images/4.jpg" alt="Studio" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+            <img src="Images/5.jpg" alt="Tập luyện" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+            <img src="Images/6.jpg" alt="Dụng cụ" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
+            <img src="Images/7.jpg" alt="Không gian" class="rounded-lg sm:rounded-xl aspect-square object-cover border border-stone-700/50 shadow">
         </div>
-        <div class="grid md:grid-cols-3 gap-8 items-stretch">
-            <div class="bg-stone-800 rounded-2xl p-8 border border-stone-700/60 shadow-lg flex flex-col justify-between space-y-6 hover:border-emerald-500/50 transition">
+        <div class="grid md:grid-cols-3 gap-5 sm:gap-8 items-stretch">
+            <div class="bg-stone-800 rounded-2xl p-5 sm:p-8 border border-stone-700/60 shadow-lg flex flex-col justify-between space-y-4 sm:space-y-6 hover:border-emerald-500/50 transition">
                 <div>
-                    <h3 class="text-xl font-bold text-white">Thẻ Trải Nghiệm</h3>
-                    <p class="text-stone-400 text-sm mt-1">Phù hợp để làm quen với không gian phòng tập</p>
-                    <div class="mt-6">
-                        <span class="text-4xl font-extrabold text-emerald-400 font-serif">150.000đ</span>
-                        <span class="text-stone-400 text-sm"> / 3 buổi</span>
+                    <h3 class="text-lg sm:text-xl font-bold text-white">Thẻ Trải Nghiệm</h3>
+                    <p class="text-stone-400 text-xs sm:text-sm mt-1">Phù hợp để làm quen với không gian phòng tập</p>
+                    <div class="mt-4 sm:mt-6">
+                        <span class="text-2xl sm:text-4xl font-extrabold text-emerald-400 font-serif">150.000đ</span>
+                        <span class="text-stone-400 text-xs sm:text-sm"> / 3 buổi</span>
                     </div>
                 </div>
-                <ul class="space-y-3 text-sm text-stone-300">
-                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Tự chọn bất kỳ lớp cơ bản</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Miễn phí sử dụng thảm & dụng cụ</li>
+                <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-stone-300">
+                    <li class="flex items-center gap-2"><span class="text-emerald-400 shrink-0">✓</span> Tự chọn bất kỳ lớp cơ bản</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400 shrink-0">✓</span> Miễn phí thảm & dụng cụ</li>
                 </ul>
-                <a href="contact.html" class="block text-center bg-stone-900 hover:bg-emerald-600 text-stone-200 hover:text-white font-medium py-3 rounded-xl transition border border-stone-700">Đăng Ký Ngay</a>
+                <a href="contact.html" class="block text-center bg-stone-900 hover:bg-emerald-600 text-stone-200 hover:text-white text-sm sm:text-base font-medium py-2.5 sm:py-3 rounded-xl transition border border-stone-700">Đăng Ký Ngay</a>
             </div>
-            <div class="bg-gradient-to-br from-emerald-900 to-stone-900 text-white rounded-2xl p-8 border-2 border-amber-500 shadow-2xl flex flex-col justify-between space-y-6 relative transform md:-translate-y-2">
-                <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+            <div class="bg-gradient-to-br from-emerald-900 to-stone-900 text-white rounded-2xl p-5 sm:p-8 border-2 border-amber-500 shadow-2xl flex flex-col justify-between space-y-4 sm:space-y-6 relative transform md:-translate-y-2">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider px-2.5 sm:px-3 py-1 rounded-full shadow whitespace-nowrap">
                     ★ Phổ biến nhất
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold">Thẻ Hội Viên Tháng</h3>
-                    <p class="text-emerald-200 text-sm mt-1">Tập luyện không giới hạn số buổi trong tháng</p>
-                    <div class="mt-6">
-                        <span class="text-4xl font-extrabold font-serif">850.000đ</span>
-                        <span class="text-emerald-200 text-sm"> / tháng</span>
+                    <h3 class="text-lg sm:text-xl font-bold">Thẻ Hội Viên Tháng</h3>
+                    <p class="text-emerald-200 text-xs sm:text-sm mt-1">Tập luyện không giới hạn số buổi trong tháng</p>
+                    <div class="mt-4 sm:mt-6">
+                        <span class="text-2xl sm:text-4xl font-extrabold font-serif">850.000đ</span>
+                        <span class="text-emerald-200 text-xs sm:text-sm"> / tháng</span>
                     </div>
                 </div>
-                <ul class="space-y-3 text-sm text-emerald-100">
-                    <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Tập luyện toàn bộ các khung giờ</li>
-                    <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Tham gia mọi loại lớp học</li>
-                    <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Ưu tiên đăng ký lớp đặc biệt</li>
+                <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-emerald-100">
+                    <li class="flex items-center gap-2"><span class="text-amber-400 shrink-0">✓</span> Tập luyện toàn bộ các khung giờ</li>
+                    <li class="flex items-center gap-2"><span class="text-amber-400 shrink-0">✓</span> Tham gia mọi loại lớp học</li>
+                    <li class="flex items-center gap-2"><span class="text-amber-400 shrink-0">✓</span> Ưu tiên đăng ký lớp đặc biệt</li>
                 </ul>
-                <a href="contact.html" class="block text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 rounded-xl transition shadow-lg">Đăng Ký Ngay</a>
+                <a href="contact.html" class="block text-center bg-amber-500 hover:bg-amber-600 text-white text-sm sm:text-base font-semibold py-2.5 sm:py-3 rounded-xl transition shadow-lg">Đăng Ký Ngay</a>
             </div>
-            <div class="bg-stone-800 rounded-2xl p-8 border border-stone-700/60 shadow-lg flex flex-col justify-between space-y-6 hover:border-emerald-500/50 transition">
+            <div class="bg-stone-800 rounded-2xl p-5 sm:p-8 border border-stone-700/60 shadow-lg flex flex-col justify-between space-y-4 sm:space-y-6 hover:border-emerald-500/50 transition">
                 <div>
-                    <h3 class="text-xl font-bold text-white">Thẻ Hội Viên Quý</h3>
-                    <p class="text-stone-400 text-sm mt-1">Tiết kiệm hơn cho người tập lâu dài</p>
-                    <div class="mt-6">
-                        <span class="text-4xl font-extrabold text-emerald-400 font-serif">2.200.000đ</span>
-                        <span class="text-stone-400 text-sm"> / 3 tháng</span>
+                    <h3 class="text-lg sm:text-xl font-bold text-white">Thẻ Hội Viên Quý</h3>
+                    <p class="text-stone-400 text-xs sm:text-sm mt-1">Tiết kiệm hơn cho người tập lâu dài</p>
+                    <div class="mt-4 sm:mt-6">
+                        <span class="text-2xl sm:text-4xl font-extrabold text-emerald-400 font-serif">2.200.000đ</span>
+                        <span class="text-stone-400 text-xs sm:text-sm"> / 3 tháng</span>
                     </div>
-                    <span class="inline-block mt-2 bg-emerald-950 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-800">
+                    <span class="inline-block mt-2 bg-emerald-950 text-emerald-400 text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-1 rounded-md border border-emerald-800 whitespace-nowrap">
                         Tiết kiệm ~ 15%
                     </span>
                 </div>
-                <ul class="space-y-3 text-sm text-stone-300">
-                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Quyền lợi toàn diện như thẻ tháng</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Tiết kiệm đến 15% chi phí</li>
-                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Tặng 1 buổi tư vấn thể chất</li>
+                <ul class="space-y-2 sm:space-y-3 text-xs sm:text-sm text-stone-300">
+                    <li class="flex items-center gap-2"><span class="text-emerald-400 shrink-0">✓</span> Quyền lợi toàn diện như thẻ tháng</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400 shrink-0">✓</span> Tiết kiệm đến 15% chi phí</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400 shrink-0">✓</span> Tặng 1 buổi tư vấn thể chất</li>
                 </ul>
-                <a href="contact.html" class="block text-center bg-stone-900 hover:bg-emerald-600 text-stone-200 hover:text-white font-medium py-3 rounded-xl transition border border-stone-700">Đăng Ký Ngay</a>
+                <a href="contact.html" class="block text-center bg-stone-900 hover:bg-emerald-600 text-stone-200 hover:text-white text-sm sm:text-base font-medium py-2.5 sm:py-3 rounded-xl transition border border-stone-700">Đăng Ký Ngay</a>
             </div>
         </div>
     </section>
