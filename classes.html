@@ -3,73 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lớp Học & Lịch Tập - An Lạc Yoga</title>
+    <title>Lớp Học & Lịch Tập - Yoga Hương Tre</title>
     <meta name="description" content="Chi tiết các lớp Hatha Yoga, Yoga trị liệu cổ vai gáy và Vinyasa Flow cùng lịch tập chi tiết trong tuần.">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+<body class="bg-stone-900 text-stone-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
     <!-- NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-emerald-800 tracking-tight flex items-center gap-2">
-                🧘‍♀️ <span class="font-serif">An Lạc Yoga</span>
+    <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-emerald-400 tracking-tight flex items-center gap-2">
+                <img src="Images/Logo.jpg" alt="Yoga Hương Tre Logo" class="w-10 h-10 rounded-full object-cover border-2 border-emerald-500 shadow-md">
+                <span class="font-serif">Yoga Hương Tre</span>
             </a>
-            <nav class="hidden md:flex space-x-8 font-medium text-stone-600">
-                <a href="index.html" class="hover:text-emerald-700 transition">Trang chủ</a>
-                <a href="classes.html" class="text-emerald-700 font-semibold">Lớp học & Lịch tập</a>
-                <a href="pricing.html" class="hover:text-emerald-700 transition">Bảng giá</a>
-                <a href="contact.html" class="hover:text-emerald-700 transition">Liên hệ</a>
+            <nav class="hidden md:flex space-x-8 font-medium text-stone-300">
+                <a href="index.html" class="hover:text-emerald-400 transition">Trang chủ</a>
+                <a href="classes.html" class="text-emerald-400 font-semibold">Lớp học & Lịch tập</a>
+                <a href="pricing.html" class="hover:text-emerald-400 transition">Bảng giá</a>
+                <a href="contact.html" class="hover:text-emerald-400 transition">Liên hệ</a>
             </nav>
-            <a href="contact.html" class="bg-emerald-700 hover:bg-emerald-800 text-white font-medium px-5 py-2 rounded-full transition shadow-sm">
+            <a href="contact.html" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-5 py-2 rounded-full transition shadow-md">
                 Đăng ký học thử
             </a>
         </div>
     </header>
 
-    <!-- CONTENT -->
-    <section class="max-w-6xl mx-auto py-16 px-4">
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <h1 class="text-3xl md:text-4xl font-bold font-serif text-emerald-900">Các Lớp Học & Lịch Trình</h1>
-            <p class="text-stone-600">Lựa chọn bộ môn phù hợp với thể trạng và mục tiêu sức khỏe của bạn.</p>
+    <!-- HERO / BANNER - ĐỒNG BỘ VỚI TRANG CHỦ -->
+    <section class="relative py-24 md:py-40 px-4 border-b border-stone-800 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="Images/TopBanner.jpg" alt="Top Banner Yoga" class="w-full h-full object-cover object-center scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-900/95 via-stone-900/60 to-transparent"></div>
+            <div class="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-stone-900/70 to-transparent"></div>
         </div>
+        <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="inline-block bg-emerald-950/90 text-emerald-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-800 backdrop-blur">
+                    Chương trình chi tiết
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold font-serif tracking-tight leading-tight text-white drop-shadow-lg">
+                    Các Lớp Học & <br><span class="text-emerald-400">Lịch Trình Tuần</span>
+                </h1>
+                <p class="text-stone-200 text-lg leading-relaxed font-light drop-shadow">
+                    Lựa chọn bộ môn phù hợp với thể trạng và mục tiêu sức khỏe của bạn từ các lớp học được thiết kế khoa học.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#schedule" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-lg">
+                        Xem Lịch Học Ngay
+                    </a>
+                    <a href="pricing.html" class="bg-stone-800/80 hover:bg-stone-700 text-stone-200 border border-stone-700 font-semibold px-8 py-3.5 rounded-xl transition backdrop-blur">
+                        Xem Bảng Giá
+                    </a>
+                </div>
+            </div>
+            <!-- Khung minh họa Lịch Tập -->
+            <div class="bg-stone-800/50 p-6 rounded-3xl border border-emerald-500/30 shadow-2xl backdrop-blur-sm ring-1 ring-stone-500/20">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-white">Lịch Tập Nổi Bật Hôm Nay</h3>
+                    <span class="text-xs bg-emerald-900 text-emerald-300 px-2.5 py-1 rounded-md font-medium">Trực tiếp & Studio</span>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-center justify-between hover:border-emerald-500/50 transition">
+                        <div>
+                            <p class="text-sm font-semibold text-emerald-400">06:00 - 07:15</p>
+                            <h4 class="text-white font-medium">Vinyasa Flow Nâng Cao</h4>
+                        </div>
+                        <span class="text-xs bg-stone-800 text-stone-300 px-3 py-1.5 rounded-lg">Cấp độ: Trung bình</span>
+                    </div>
+                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-center justify-between hover:border-emerald-500/50 transition">
+                        <div>
+                            <p class="text-sm font-semibold text-emerald-400">18:00 - 19:15</p>
+                            <h4 class="text-white font-medium">Hatha Yoga Cơ Bản</h4>
+                        </div>
+                        <span class="text-xs bg-stone-800 text-stone-300 px-3 py-1.5 rounded-lg">Cấp độ: Mới bắt đầu</span>
+                    </div>
+                    <div class="bg-stone-900 p-4 rounded-xl border border-stone-800 flex items-center justify-between hover:border-emerald-500/50 transition">
+                        <div>
+                            <p class="text-sm font-semibold text-emerald-400">19:15 - 20:30</p>
+                            <h4 class="text-white font-medium">Yoga Trị Liệu Cổ Vai Gáy</h4>
+                        </div>
+                        <span class="text-xs bg-stone-800 text-stone-300 px-3 py-1.5 rounded-lg">Phù hợp: Dân văn phòng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="max-w-7xl mx-auto py-20 px-4">
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
-                <div class="bg-emerald-800 text-white p-6">
-                    <h3 class="text-xl font-bold font-serif">Hatha Yoga Cơ Bản</h3>
-                    <p class="text-emerald-200 text-sm mt-1">Dành cho người mới bắt đầu</p>
+            <div class="bg-stone-800 rounded-2xl overflow-hidden shadow-lg border border-stone-700/60 hover:border-emerald-500 transition flex flex-col group">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="Images/1.jpg" alt="Hatha Yoga Cơ Bản" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 to-transparent flex items-end p-5">
+                        <div>
+                            <h3 class="text-xl font-bold font-serif text-white">Hatha Yoga Cơ Bản</h3>
+                            <p class="text-emerald-200 text-sm mt-0.5">Dành cho người mới bắt đầu</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                    <p class="text-stone-600 text-sm">Tập trung vào các tư thế nền tảng, kiểm soát hơi thở sâu và kéo giãn cơ thể an toàn.</p>
-                    <div class="border-t pt-4 text-sm text-stone-700 space-y-1">
-                        <p><strong>Lịch:</strong> Thứ 2 - 4 - 6</p>
-                        <p><strong>Giờ:</strong> 18:00 - 19:15</p>
+                    <p class="text-stone-400 text-sm">Tập trung vào các tư thế nền tảng, kiểm soát hơi thở sâu và kéo giãn cơ thể an toàn.</p>
+                    <div class="border-t border-stone-700 pt-4 text-sm text-stone-300 space-y-1">
+                        <p><strong class="text-emerald-400">Lịch:</strong> Thứ 2 - 4 - 6</p>
+                        <p><strong class="text-emerald-400">Giờ:</strong> 18:00 - 19:15</p>
                     </div>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
-                <div class="bg-emerald-800 text-white p-6">
-                    <h3 class="text-xl font-bold font-serif">Yoga Trị Liệu Cổ Vai Gáy</h3>
-                    <p class="text-emerald-200 text-sm mt-1">Đặc trị dân văn phòng</p>
+            <div class="bg-stone-800 rounded-2xl overflow-hidden shadow-lg border border-stone-700/60 hover:border-emerald-500 transition flex flex-col group">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="Images/2.jpg" alt="Yoga Trị Liệu Cổ Vai Gáy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 to-transparent flex items-end p-5">
+                        <div>
+                            <h3 class="text-xl font-bold font-serif text-white">Yoga Trị Liệu Cổ Vai Gáy</h3>
+                            <p class="text-emerald-200 text-sm mt-0.5">Đặc trị dân văn phòng</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                    <p class="text-stone-600 text-sm">Giúp giải phóng các điểm chèn ép cơ, giảm đau nhức vùng cổ, vai, gáy và cột sống do ngồi lâu.</p>
-                    <div class="border-t pt-4 text-sm text-stone-700 space-y-1">
-                        <p><strong>Lịch:</strong> Thứ 3 - 5 - 7</p>
-                        <p><strong>Giờ:</strong> 19:15 - 20:30</p>
+                    <p class="text-stone-400 text-sm">Giúp giải phóng các điểm chèn ép cơ, giảm đau nhức vùng cổ, vai, gáy và cột sống do ngồi lâu.</p>
+                    <div class="border-t border-stone-700 pt-4 text-sm text-stone-300 space-y-1">
+                        <p><strong class="text-emerald-400">Lịch:</strong> Thứ 3 - 5 - 7</p>
+                        <p><strong class="text-emerald-400">Giờ:</strong> 19:15 - 20:30</p>
                     </div>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
-                <div class="bg-emerald-800 text-white p-6">
-                    <h3 class="text-xl font-bold font-serif">Vinyasa Flow Nâng Cao</h3>
-                    <p class="text-emerald-200 text-sm mt-1">Tăng cường sức bền & đốt mỡ</p>
+            <div class="bg-stone-800 rounded-2xl overflow-hidden shadow-lg border border-stone-700/60 hover:border-emerald-500 transition flex flex-col group">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="Images/3.jpg" alt="Vinyasa Flow Nâng Cao" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 to-transparent flex items-end p-5">
+                        <div>
+                            <h3 class="text-xl font-bold font-serif text-white">Vinyasa Flow Nâng Cao</h3>
+                            <p class="text-emerald-200 text-sm mt-0.5">Tăng cường sức bền & đốt mỡ</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                    <p class="text-stone-600 text-sm">Chuỗi động tác chuyển động liên tục theo nhịp thở, giúp nâng cao sự dẻo dai và vóc dáng săn chắc.</p>
-                    <div class="border-t pt-4 text-sm text-stone-700 space-y-1">
-                        <p><strong>Lịch:</strong> Thứ 2 - 4 - 6</p>
-                        <p><strong>Giờ:</strong> 06:00 - 07:15</p>
+                    <p class="text-stone-400 text-sm">Chuỗi động tác chuyển động liên tục theo nhịp thở, giúp nâng cao sự dẻo dai và vóc dáng săn chắc.</p>
+                    <div class="border-t border-stone-700 pt-4 text-sm text-stone-300 space-y-1">
+                        <p><strong class="text-emerald-400">Lịch:</strong> Thứ 2 - 4 - 6</p>
+                        <p><strong class="text-emerald-400">Giờ:</strong> 06:00 - 07:15</p>
                     </div>
                 </div>
             </div>
@@ -77,8 +149,10 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-emerald-950 text-emerald-200 py-8 text-center text-sm border-t border-emerald-900 mt-20">
-        <p>© 2026 An Lạc Yoga Studio. All rights reserved.</p>
+    <footer class="bg-stone-950 text-stone-400 py-10 text-center text-sm border-t border-stone-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p>© CLB Yoga Hương Tre.</p>
+        </div>
     </footer>
 </body>
 </html>
